@@ -6,23 +6,16 @@
 /*   By: mgibson <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/09 17:17:44 by mgibson           #+#    #+#             */
-/*   Updated: 2017/08/09 19:23:20 by mgibson          ###   ########.fr       */
+/*   Updated: 2017/08/09 19:42:40 by mgibson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write (1,&c,1);
-}
-
-void ft_putallchar(char c, char b, char a)
+void	ft_putallchar(char c, char b, char a)
 {
 	ft_putchar(a);
 	ft_putchar(b);
 	ft_putchar(c);
-	if(!(a == '7' && b == '8' && c == '9'))
+	if (!(a == '7' && b == '8' && c == '9'))
 	{
 		ft_putchar(',');
 		ft_putchar(' ');
@@ -38,26 +31,19 @@ void	ft_print_comb(void)
 	a = '0';
 	b = '0';
 	c = '0';
-
-		while(a <= '7')
+	while (a <= '7')
+	{
+		b = a + 1;
+		while (b <= '8')
 		{
-			b = a + 1;
-			while(b <= '8')
+			c = b + 1;
+			while (c <= '9')
 			{
-				c = b + 1;
-				while(c <= '9')
-				{
-					ft_putallchar(c,b,a);
-					c++;
-				}
-				b++;
+				ft_putallchar(c, b, a);
+				c++;
 			}
-		a++;
+			b++;
 		}
-}
-
-int	main()
-{
-	ft_print_comb();
-	return(0);
+		a++;
+	}
 }
