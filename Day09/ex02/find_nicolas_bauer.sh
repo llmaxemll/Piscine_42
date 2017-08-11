@@ -1,1 +1,1 @@
-cat phonebook | grep "Nicolas" | grep "Bauer"
+cat phonebook | grep -i "nicolas" | grep -i "bauer" | cut -b 15-26 | sed $'s/\t//g' | awk 'NR%2==1'
