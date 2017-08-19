@@ -6,11 +6,9 @@
 /*   By: mgibson <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/16 22:51:14 by mgibson           #+#    #+#             */
-/*   Updated: 2017/08/17 00:08:26 by mgibson          ###   ########.fr       */
+/*   Updated: 2017/08/20 01:02:11 by mgibson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
-#include <stdlib.h>
 
 int	ft_isspace(char c)
 {
@@ -44,11 +42,4 @@ int	ft_atoi(char *str)
 		i++;
 	}
 	return (result * sign);
-}
-
-int		main(void)
-{
-	printf("%d\n", ft_atoi("10555446"));
-	printf("%d\n", atoi("10555446"));
-	return (0);
 }

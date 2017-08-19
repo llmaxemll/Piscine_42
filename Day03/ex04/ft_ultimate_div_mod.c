@@ -6,11 +6,9 @@
 /*   By: mgibson <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/15 22:48:16 by mgibson           #+#    #+#             */
-/*   Updated: 2017/08/16 03:35:26 by mgibson          ###   ########.fr       */
+/*   Updated: 2017/08/20 00:59:51 by mgibson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 void	ft_ultimate_div_mod(int *a, int *b)
 {

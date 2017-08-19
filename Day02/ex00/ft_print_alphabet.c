@@ -6,13 +6,13 @@
 /*   By: mgibson <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/09 11:48:36 by mgibson           #+#    #+#             */
-/*   Updated: 2017/08/09 13:36:04 by mgibson          ###   ########.fr       */
+/*   Updated: 2017/08/13 08:41:01 by mgibson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-void	ft_print_putchar(void)
+void	ft_print_alphabet(void)
 {
 	int n;
 

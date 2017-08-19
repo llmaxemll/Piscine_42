@@ -6,11 +6,9 @@
 /*   By: mgibson <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/17 00:36:50 by mgibson           #+#    #+#             */
-/*   Updated: 2017/08/17 02:40:00 by mgibson          ###   ########.fr       */
+/*   Updated: 2017/08/20 01:02:46 by mgibson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 void ft_switch(int *a, int *b)
 {
@@ -54,11 +52,4 @@ int	ft_sort_integer_table(int *tab, int size)
 			return (0);
 	}
 	return (0);
-}
-
-int	main()
-{
-	int a[9] = {5,9,8,2,1,3,6,4,5};
-	ft_sort_integer_table(a, 9);
-	return(0);
 }

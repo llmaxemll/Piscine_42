@@ -6,7 +6,7 @@
 /*   By: mgibson <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/09 22:13:03 by mgibson           #+#    #+#             */
-/*   Updated: 2017/08/12 23:43:22 by mgibson          ###   ########.fr       */
+/*   Updated: 2017/08/13 08:41:34 by mgibson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_allchar(int a, int b)
 	}
 }
 
-void	ft_print_comb(void)
+void	ft_print_comb2(void)
 {
 	int a;
 	int b;
