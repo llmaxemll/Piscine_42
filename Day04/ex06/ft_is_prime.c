@@ -5,39 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mgibson <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/18 11:46:40 by mgibson           #+#    #+#             */
-/*   Updated: 2017/08/18 14:36:15 by mgibson          ###   ########.fr       */
+/*   Created: 2017/08/20 01:29:16 by mgibson           #+#    #+#             */
+/*   Updated: 2017/08/21 10:33:44 by mgibson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
 int	ft_is_prime(int nb)
 {
-	int i;
-	int j;
-	int isPrime;
+	int x;
 
-	i = 2;
-	j = 2;
-
-	while (i <= nb)
-	{
-		i++;
-		isPrime = 0;
-		while (j <= i/2)
-		{
-			j++;
-			if (i % j == 0)
-				isPrime = 1;
-		}
-	}
-	printf("%i", isPrime);
-	return 1;
-}
-
-int	main()
-{
-	ft_is_prime(100);
-	return(0);
+	x = 2;
+	while ((nb % x) != 0)
+		x++;
+	if (x == nb)
+		return (1);
+	else
+		return (0);
 }

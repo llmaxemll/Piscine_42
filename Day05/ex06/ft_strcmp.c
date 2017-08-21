@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mgibson <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/17 15:27:57 by mgibson           #+#    #+#             */
-/*   Updated: 2017/08/21 04:54:40 by mgibson          ###   ########.fr       */
+/*   Created: 2017/08/20 14:51:40 by mgibson           #+#    #+#             */
+/*   Updated: 2017/08/20 14:53:01 by mgibson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_recursive_factorial(int nb)
+#include <string.h>
+
+int ft_strcmp(char *s1, char *s2)
 {
-	if (nb == 0)
-		return (1);
-	if (nb < 0)
-		return (0);
-	if (nb <= 1)
-		return (1);
-	return (nb * ft_recursive_factorial(nb - 1));
+	strcmp(s1, s2);
+}
+
+int	main()
+{
+	ft_strcmp();
+	return (0);
 }

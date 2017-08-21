@@ -1,22 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mgibson <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/17 15:27:57 by mgibson           #+#    #+#             */
-/*   Updated: 2017/08/21 04:54:40 by mgibson          ###   ########.fr       */
+/*   Created: 2017/08/20 14:20:04 by mgibson           #+#    #+#             */
+/*   Updated: 2017/08/20 14:43:07 by mgibson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_recursive_factorial(int nb)
+#include <stdio.h>
+#include <string.h>
+
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	if (nb == 0)
-		return (1);
-	if (nb < 0)
-		return (0);
-	if (nb <= 1)
-		return (1);
-	return (nb * ft_recursive_factorial(nb - 1));
+	strncpy(src, dest, n);
+	return 0;
 }
+
+int main()
+{
+	ft_strncpy("bruh\n", "thefuck?\n", 5);
+	return(0);
+}
+
+

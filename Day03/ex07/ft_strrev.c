@@ -6,22 +6,22 @@
 /*   By: mgibson <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/16 15:43:54 by mgibson           #+#    #+#             */
-/*   Updated: 2017/08/20 01:01:10 by mgibson          ###   ########.fr       */
+/*   Updated: 2017/08/21 19:04:33 by mgibson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char 	*ft_sterrev(char *str)
+char	*ft_strrev(char *str)
 {
-	int		x;
-	int		y;
-	char	c;
-
-	x = 0;
-	while(str[x] != '\0')
-		x++;
+	int 	x;
+	int 	y;
+	char 	c;
 
 	y = 0;
-	while (x >= 0)
+	x = 0;
+	while (str[x] != '\0')
+		x++;
+	x--;
+	while (x > y)
 	{
 		c = str[x];
 		str[x] = str[y];
@@ -29,5 +29,5 @@ char 	*ft_sterrev(char *str)
 		x--;
 		y++;
 	}
-	return(str);
+	return (str);
 }
