@@ -6,15 +6,15 @@
 /*   By: mgibson <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/16 15:43:54 by mgibson           #+#    #+#             */
-/*   Updated: 2017/08/21 19:04:33 by mgibson          ###   ########.fr       */
+/*   Updated: 2017/08/22 07:47:44 by mgibson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strrev(char *str)
 {
-	int 	x;
-	int 	y;
-	char 	c;
+	int		x;
+	int		y;
+	char	c;
 
 	y = 0;
 	x = 0;
