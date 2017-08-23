@@ -6,12 +6,9 @@
 /*   By: mgibson <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/17 18:34:28 by mgibson           #+#    #+#             */
-/*   Updated: 2017/08/21 04:59:25 by mgibson          ###   ########.fr       */
+/*   Updated: 2017/08/23 07:51:01 by mgibson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-#include <stdio.h>
 
 int	ft_recursive_power(int nb, int power)
 {

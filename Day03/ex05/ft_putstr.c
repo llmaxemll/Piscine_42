@@ -6,7 +6,7 @@
 /*   By: mgibson <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/15 22:51:03 by mgibson           #+#    #+#             */
-/*   Updated: 2017/08/21 18:57:50 by mgibson          ###   ########.fr       */
+/*   Updated: 2017/08/22 21:51:41 by mgibson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putstr(char *str)
 	x = 0;
 	while (str[x] != '\0')
 	{
-		putchar(str[x]);
+		ft_putchar(str[x]);
 		x++;
 	}
 }

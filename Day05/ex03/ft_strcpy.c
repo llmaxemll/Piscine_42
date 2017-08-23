@@ -6,7 +6,7 @@
 /*   By: mgibson <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/20 09:36:12 by mgibson           #+#    #+#             */
-/*   Updated: 2017/08/20 22:08:37 by mgibson          ###   ########.fr       */
+/*   Updated: 2017/08/22 13:00:44 by mgibson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,14 @@
 
 char	*ft_strcpy(char *dest, char *src)
 {
-	return(strcpy(src, dest));
+	strcpy(src, dest)
+	{
+		while (src[x] != '\0')
+		{
+			src[x] = dest[x];
+			x++;
+		}
+	}
 	return (0);
 }
 

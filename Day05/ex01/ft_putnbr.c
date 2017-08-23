@@ -6,12 +6,9 @@
 /*   By: mgibson <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/20 03:56:02 by mgibson           #+#    #+#             */
-/*   Updated: 2017/08/20 07:51:31 by mgibson          ###   ########.fr       */
+/*   Updated: 2017/08/22 10:41:06 by mgibson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-#include <stdio.h>
 
 void	ft_putchar(char c)
 {
@@ -42,11 +39,3 @@ void	ft_putnbr(int nb)
 		ft_putchar(nb + '0');
 	}
 }
-
-
-int	main()
-{
-	ft_putnbr(42);
-	return 0;
-}
-
