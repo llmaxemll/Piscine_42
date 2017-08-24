@@ -6,34 +6,46 @@
 /*   By: mgibson <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/17 00:36:50 by mgibson           #+#    #+#             */
-/*   Updated: 2017/08/23 01:31:45 by mgibson          ###   ########.fr       */
+/*   Updated: 2017/08/24 13:12:12 by mgibson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_switch(int *x, int *y)
-{
-	int		t;
-
-	t = *x;
-	*x = *y;
-	*y = t;
-}
+#include <stdio.h>
+#include <unistd.h>
 
 void	ft_sort_integer_table(int *tab, int size)
 {
-	int		x;
-	int		y;
+	int		*x;
+	int		*y;
+	int		t;
+	int		*s;
 
 	x = 0;
-	while (y < size)
+	y = 0;
+	s = &size;
+	t = 0;
+	while (y != 0)
 	{
-		y = x + 1;
-		if (tab[x] > tab[y])
+		while (x < y - 1)
 		{
-			ft_switch(tab[x], tab[y]);
-			x = 0;
-		}
-		else
+			if (tab[*x] > tab[*x + 1])
+			t = *x;
+			*x = *y;
+			*y = t;
 			x++;
+		}
+		x = 0;
+		if (y != 0)
+			y++;
 	}
+}
+
+int	main()
+{
+	int *y;
+	y = 0;
+	int tab[100] = {6,5,4,4,8,9,4};
+	ft_sort_integer_table(tab, 8);
+	printf("%d", *y);
+	return (0);
 }

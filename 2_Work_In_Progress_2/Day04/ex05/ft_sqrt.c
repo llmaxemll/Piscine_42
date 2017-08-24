@@ -6,29 +6,27 @@
 /*   By: mgibson <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/17 15:37:53 by mgibson           #+#    #+#             */
-/*   Updated: 2017/08/21 05:05:51 by mgibson          ###   ########.fr       */
+/*   Updated: 2017/08/24 13:49:45 by mgibson          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_sqrt(int nb)
 {
 	int x;
-	int y;
+	int sign;
 
 	x = 0;
-	y = 0;
+	sign = 1;
 	if (nb >= 2147483642)
 		return (0);
-	if (nb <= 0)
-		return (0);
-	if (y < nb)
+	if (nb < 0)
 	{
-		while (y < nb)
-		{
-			y = x * x;
-			if (y != nb)
-				x++;
-		}
+		sign = -1;
+		nb *= sign;
 	}
-	return (x);
+	while (x * x != nb && x * x < nb)
+		x++;
+	if (x * x != nb)
+		return (0);
+	return (x * sign);
 }
