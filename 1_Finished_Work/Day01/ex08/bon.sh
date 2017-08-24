@@ -1,1 +1,0 @@
-ldapsearch -Q -LLL sn="*bon*" | grep 'cn:' | wc -l | sed $'s/ //g'

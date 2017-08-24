@@ -1,1 +1,0 @@
-ldapsearch -Q -LLL cn | grep "cn: Z" | sed "s/cn: //g" | sort -r
